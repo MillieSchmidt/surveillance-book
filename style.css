@@ -1,0 +1,134 @@
+:root {
+  --turquoise: rgb(16, 169, 161);
+  --dark-turquoise: rgb(7, 136, 129);
+  --foam: rgb(211, 248, 247);
+  --dark: rgb(39, 39, 39);
+}
+
+* {
+  box-sizing: border-box;
+}
+  
+html {
+  box-sizing: border-box;
+  direction: rtl;
+}
+  
+body {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--turquoise);
+  letter-spacing: 0.2rem;
+  text-align: center;
+  color: var(--dark);
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 3.5rem;
+}
+
+.header {
+  height: 17rem;
+  width: 100%;
+  background-color: var(--dark-turquoise);
+  background-image: url('./cover.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--turquoise);
+  font-size: 1.2rem;
+}
+
+.content a {
+  font-weight: bold;
+}
+
+.text {
+  width: 60%;
+  padding: 1rem 3rem;
+  margin-top: 5px;
+  background-color: var(--foam);
+  border-radius: 2px;
+}
+
+.quote {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.bio-pic {
+  height: 17rem;
+  width: 24rem;
+}
+
+.book-cover {
+  height: 17rem;
+  width: 12rem;
+}
+
+.content p {
+  margin: 0.4rem;
+}
+
+.special {
+  padding: 0.4rem;
+  margin: 1.4rem 0;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgba(39, 39, 39, 0.5);
+  border-radius: 2px;
+}
+
+@media screen and (max-width:1000px) {
+  body {
+    font-size: 0.8rem;
+  }
+
+  .content {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .text {
+    padding: 0.1rem;
+    width: 90%;
+  }
+
+  .bio-pic {
+    height: 8rem;
+    width: 11.2rem;
+  }
+
+  .book-cover {
+    height: 11.3rem;
+    width: 8.05rem;
+  }
+
+  .special {
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    height: 10rem;
+  }
+
+  .content {
+    padding: 1rem 0;
+  }
+
+  .text {
+    width: 100%;
+  }
+}
