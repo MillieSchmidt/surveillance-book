@@ -67,6 +67,15 @@ body {
   font-style: italic;
 }
 
+.mishalah {
+  color: var(--turquoise);
+}
+
+.mishalah:hover {
+  cursor: pointer;
+  color: var(--dark-turquoise);
+}
+
 .bio-pic {
   height: 17rem;
   width: 24rem;
